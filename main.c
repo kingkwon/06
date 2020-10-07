@@ -2,46 +2,26 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-void sumTwo()
+int square(int a)
 {
-	int a, b;
-	printf("input two integers : ");
-	scanf("%d %d", &a, &b);
-	printf("%d + %d = %d", a, b, a+b);
+	return(a*a);
 }
-void square()
+int main()
 {
-	int n;
-	printf("input a integer : ");
-	scanf("%d", &n);
-	printf("%d^2 = %d", n, n*n);
-}
-void get_max()
-{
-	int x, y;
-	printf("input two integers : ");
-	scanf("%d %d", &x, &y);
-	if(x>y)
-	{
-		printf("%d", x);
-	}
-	else if(x<y)
-	{
-		printf("%d", y);
-	}
-	else
-	{
-		printf("%d", x);
-	}
+	int a=2;
+	a = square(a);
+	printf("a = %i\n", a);
 }
 
-int main(void) {
+//void square(int a)
+//{
+//	a = a*a;
+//}
+
+//int main() {
 	
-	sumTwo();
-	printf("\n");
-	square();
-	printf("\n");	
-	get_max();
+//	int a = 2;
+//	square(a);
+//	printf("a = %i\n", a);
 	
-	return 0;
-}
+//}
